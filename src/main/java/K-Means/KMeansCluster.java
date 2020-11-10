@@ -16,9 +16,9 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 /**
- * ÔÚÊÕÁ²Ìõ¼şÂú×ãÇÒËùÓĞ´ØÖĞĞÄµÄÎÄ¼ş×îºó²úÉúºó£¬ÔÙ¶ÔÊäÈëÎÄ¼ş
- * ÖĞµÄËùÓĞÊµÀı½øĞĞ»®·Ö´ØµÄ¹¤×÷£¬×îºó°ÑËùÓĞÊµÀı°´ÕÕ(ÊµÀı,´Øid)
- * µÄ·½Ê½Ğ´½ø½á¹ûÎÄ¼ş
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+ * ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Ğ»ï¿½ï¿½Ö´ØµÄ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(Êµï¿½ï¿½,ï¿½ï¿½id)
+ * ï¿½Ä·ï¿½Ê½Ğ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
  * @author KING
  *
  */
@@ -26,7 +26,7 @@ public class KMeansCluster {
 	public static class KMeansClusterMapper extends Mapper<LongWritable, Text, Text, IntWritable>{
 		private ArrayList<Cluster> kClusters = new ArrayList<Cluster>();
 		/**
-		 * ¶ÁÈëÄ¿Ç°µÄ´ØĞÅÏ¢
+		 * ï¿½ï¿½ï¿½ï¿½Ä¿Ç°ï¿½Ä´ï¿½ï¿½ï¿½Ï¢
 		 */
 		@Override
 		protected void setup(Context context) throws IOException,InterruptedException{
@@ -53,7 +53,7 @@ public class KMeansCluster {
 		}
 		
 		/**
-		 * ¶ÁÈ¡Ò»ĞĞÈ»ºóÑ°ÕÒÀë¸Ãµã×î½üµÄ´Øid·¢Éä(instance,clusterID)
+		 * ï¿½ï¿½È¡Ò»ï¿½ï¿½È»ï¿½ï¿½Ñ°ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½idï¿½ï¿½ï¿½ï¿½(instance,clusterID)
 		 */
 		@Override
 		public void map(LongWritable key, Text value, Context context)throws 

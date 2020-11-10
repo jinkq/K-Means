@@ -10,7 +10,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 
 /**
- * 调度整个KMeans运行的过程
+ * 锟斤拷锟斤拷锟斤拷锟斤拷KMeans锟斤拷锟叫的癸拷锟斤拷
  * @author KING
  *
  */

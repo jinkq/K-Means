@@ -4,7 +4,7 @@ import java.io.IOException;
 import org.apache.hadoop.io.Writable;
 
 /*
- * k-means聚类算法簇信息
+ * k-means閿熸枻鎷烽敓鏂ゆ嫹閿熷娉曢敓鏂ゆ嫹閿熸枻鎷锋伅
  */
 public class Cluster implements Writable{
 	private int clusterID;
