@@ -49,7 +49,7 @@ public class KMeansDriver {
 
 			FileInputFormat.addInputPath(clusterCenterJob, new Path(sourcePath));
 			FileOutputFormat.setOutputPath(clusterCenterJob, new Path(outputPath + "/cluster-" + (i + 1) +"/"));
-			
+
 			clusterCenterJob.waitForCompletion(true);
 			System.out.println("finished!");
 		}
@@ -70,7 +70,7 @@ public class KMeansDriver {
 
 		FileInputFormat.addInputPath(kMeansClusterJob, new Path(sourcePath));
 		FileOutputFormat.setOutputPath(kMeansClusterJob, new Path(outputPath + "/clusteredInstances" + "/"));
-		
+
 		kMeansClusterJob.waitForCompletion(true);
 		System.out.println("finished!");
 	}
