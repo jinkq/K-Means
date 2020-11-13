@@ -18,10 +18,7 @@ K-Means聚类是一种无监督学习，需要提前知道簇数k。初始选k�
 ### 例：k=5, iternum=6的聚类结果图片
 
 （其余结果图片在result文件夹中）
-
 ![](https://finclaw.oss-cn-shenzhen.aliyuncs.com/img/k=5_iternum=6.png)
-
-
 
 ## 作业心得
 1. 刚开始是打算用matplotlib.pyplot画聚类结果图，希望以不同颜色区分不同簇的样本点，但上网搜发现这需要提前从Hadoop输出结果文件中读取总簇数，并为每一个不同的簇指定颜色。后来改用Seaborn，可以直接通过scatterplot的`hue`和`style`参数指定按照某一变量自动生成不同的颜色和形状，Seaborn库的功能更加强大，与R语言相似
